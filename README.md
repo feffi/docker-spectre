@@ -6,6 +6,8 @@ A dockerized spectre test environment. This image tests for the [spectre vulnera
 * [spectre_multiarch: Architecture independent version](https://github.com/adrb/public/tree/master/linux/spectre_multiarch)
 * [Deep learning side channel privileged memory reader](https://github.com/asm/deep_spectre)
 * [Am-I-affected-by-Meltdown](https://github.com/raphaelsc/Am-I-affected-by-Meltdown)
+* [Meltdown Proof-of-Concept](https://github.com/IAIK/meltdown)
+* [How to mitigate Meltdown in Docker images?](https://security.stackexchange.com/questions/176657/how-to-mitigate-meltdown-in-docker-images)
 
 ## Prerequisites
 * a system running an actual version of gcc, e.g. Ubuntu 16.04 LTS
