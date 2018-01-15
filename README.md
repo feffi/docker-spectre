@@ -15,6 +15,7 @@ The POC will be compiled via gcc and containerized into a docker scratch contain
 ```
 git clone git@github.com:feffi/docker-spectre.git
 cd docker-spectre
+git submodule init
 ```
 Then we create a base scratch image where we will bundle the binaries in for easy deployment:
 ```
@@ -81,7 +82,6 @@ Reading at malicious_x = 0xffffffffffdd75cf... Success: 0x2E=’.’ score=2
 ## Meltdown POC
 Same procedure with the Meltdown check binary, first clone the POCs repository, then compile the binary:
 ```
-git clone https://github.com/raphaelsc/Am-I-affected-by-Meltdown.git
 cd ./Am-I-affected-by-Meltdown
 make
 ```
