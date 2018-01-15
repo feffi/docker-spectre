@@ -16,6 +16,7 @@ The POC will be compiled via gcc and containerized into a docker scratch contain
 git clone git@github.com:feffi/docker-spectre.git
 cd docker-spectre
 git submodule init
+git submodule update
 ```
 Then we create a base scratch image where we will bundle the binaries in for easy deployment:
 ```
