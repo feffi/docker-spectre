@@ -1,0 +1,3 @@
+[submodule "Am-I-affected-by-Meltdown"]
+	path = Am-I-affected-by-Meltdown
+	url = https://github.com/raphaelsc/Am-I-affected-by-Meltdown.git
