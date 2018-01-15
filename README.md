@@ -80,7 +80,7 @@ Reading at malicious_x = 0xffffffffffdd75cf... Success: 0x2E=’.’ score=2
 ```
 
 ## Meltdown POC
-Same procedure with the Meltdown check binary, first clone the POCs repository, then compile the binary:
+Same procedure with the Meltdown check binary, first switch to the POCs directory ([git submodule](https://git-scm.com/book/de/v1/Git-Tools-Submodule)), then compile the binary:
 ```
 cd ./Am-I-affected-by-Meltdown
 make
