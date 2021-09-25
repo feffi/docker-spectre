@@ -30,7 +30,7 @@ gcc -static -std=c99 -O0 spectre.c -o spectre
 ```
 We can now bundle the binary in the prepared docker scratch image:
 ```
-echo "FROM scratch\nADD spectre /spectre\nCMD ["/spectre"]\n" > Dockerfile
+echo -e "FROM scratch\nADD spectre /spectre\nCMD ["/spectre"]\n" > Dockerfile
 docker build -t docker-sprectre:latest .
 ```
 Now you're able to run this test as a normal containerized app anywhere between your local machine or cluster scale on kubernetes.
@@ -90,7 +90,7 @@ make
 ```
 Again, after successfull compiling, package the check into an docker container, this time a Ubuntu baseimage:
 ```
-echo "FROM phusion/baseimage\nADD meltdown-checker /meltdown-checker\nCMD ["/meltdown-checker"]\n" > Dockerfile
+echo -e "FROM phusion/baseimage\nADD meltdown-checker /meltdown-checker\nCMD ["/meltdown-checker"]\n" > Dockerfile
 docker build -t docker-meltdown:latest .
 ```
 This test can now be run as a normal containerized app anywhere between your local machine or cluster scale on kubernetes.
